@@ -6,7 +6,9 @@
   "scripts": {
     "test": "gulp test",
     "lint": "gulp lint",
-    "build": "gulp build --modules=modules.json"
+    "build": "gulp build --modules=modules.json",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -98,6 +100,8 @@
     "crypto-js": "^3.1.9-1",
     "fun-hooks": "^0.8.1",
     "jsencrypt": "^3.0.0-rc.1",
-    "just-clone": "^1.0.2"
-  }
+    "just-clone": "^1.0.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
